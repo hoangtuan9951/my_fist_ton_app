@@ -51,3 +51,29 @@ export const Input = styled("input")`
     border: 1px solid #fefefe;
   }
 `;
+
+export const ButtonYes = styled.button`
+ background-color: ${(props) =>
+    props.disabled ? "#6e6e6e" : "var(--tg-theme-button-color)"};
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+
+  @media (prefers-color-scheme: dark) {
+    border: 1px solid #fefefe;
+  }
+`;
+
+export const ButtonNo = styled.button`
+ background-color: red;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+
+  @media (prefers-color-scheme: dark) {
+    border: 1px solid #fefefe;
+  }
+`;
+
